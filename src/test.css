@@ -31,16 +31,16 @@ body {
     align-items: center;
 
     background:
-        radial-gradient(circle at top left,
-            rgba(244, 166, 193, 0.8),
+    radial-gradient(circle at 20% 20%,
+            rgba(82, 120, 200, 0.45),
             transparent 35%),
-        radial-gradient(circle at bottom right,
-            rgba(216, 140, 160, 0.75),
+        radial-gradient(circle at 80% 80%,
+                rgba(120, 90, 200, 0.4),
             transparent 35%),
         linear-gradient(135deg,
-            #fff0f3,
-            #f8c8dc,
-            #e8c7d8);
+            #0b1026,
+                #182848,
+                #243b55);
 }
 
 /* =========================
@@ -124,9 +124,10 @@ body {
 
     text-align: center;
 
-    background: rgba(255, 255, 255, 0.28);
-
-    border: 1px solid rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow:
+            0 25px 60px rgba(0, 0, 0, 0.3);
 
     border-radius: 35px;
 
@@ -134,8 +135,7 @@ body {
 
     -webkit-backdrop-filter: blur(20px);
 
-    box-shadow:
-        0 25px 60px rgba(142, 61, 91, 0.18);
+
 }
 
 /* =========================
@@ -153,7 +153,7 @@ body {
 
     margin-bottom: 25px;
 
-    color: #9b536d;
+    color: #aebcff;
 
     font-size: 13px;
 
@@ -177,7 +177,7 @@ body {
 
     font-weight: 400;
 
-    color: #542638;
+    color: #f5f7ff;
 }
 
 .hero-content h1 span {
@@ -185,7 +185,7 @@ body {
 
     margin-top: 15px;
 
-    color: #a83f64;
+    color: #8e9bff;
 }
 
 /* =========================
@@ -197,7 +197,7 @@ body {
 
     margin: 30px auto;
 
-    color: #704957;
+    color: #c5cbea;
 
     font-size: 18px;
 
@@ -224,9 +224,12 @@ body {
     color: #ffffff;
 
     background:
-        linear-gradient(135deg,
-            rgba(199, 91, 124, 0.9),
-            rgba(158, 69, 99, 0.9));
+    linear-gradient(135deg,
+            #4f7cac,
+                #8e9bff);
+            
+                box-shadow:
+                    0 15px 35px rgba(78, 120, 200, 0.35);
 
     backdrop-filter: blur(10px);
 
@@ -238,8 +241,7 @@ body {
 
     cursor: pointer;
 
-    box-shadow:
-        0 12px 30px rgba(158, 69, 99, 0.3);
+
 
     transition: all 0.3s ease;
 }
@@ -311,13 +313,10 @@ body {
     text-align: center;
 
     background:
-        radial-gradient(circle at top right,
-            rgba(244, 166, 193, 0.5),
-            transparent 35%),
         linear-gradient(135deg,
-            #fff5f7,
-            #f8dce5,
-            #f1d5df);
+                #101936,
+                    #182848,
+                    #243b55);
 }
 
 /* =========================
@@ -337,13 +336,13 @@ body {
 
     font-weight: 400;
 
-    color: #542638;
+    color: #f5f7ff;
 }
 
 .section-heading h2 strong {
     display: block;
 
-    color: #a83f64;
+    color: #8e9bff;
 
     font-weight: 400;
 }
@@ -377,9 +376,10 @@ body {
 .photo-card {
     padding: 15px;
 
-    background: rgba(255, 255, 255, 0.32);
-
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                    0 25px 60px rgba(0, 0, 0, 0.25);
 
     border-radius: 25px;
 
@@ -387,8 +387,7 @@ body {
 
     -webkit-backdrop-filter: blur(15px);
 
-    box-shadow:
-        0 20px 40px rgba(142, 61, 91, 0.14);
+
 
     transition:
         transform 0.3s ease,
@@ -554,7 +553,13 @@ body {
 .memory-photo {
     padding: 12px;
 
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+    
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    
+        box-shadow:
+            0 25px 60px rgba(0, 0, 0, 0.25);
+        background: rgba(255, 255, 255, 0.35);
 
     border: 1px solid rgba(255, 255, 255, 0.6);
 
@@ -564,20 +569,15 @@ body {
 
     -webkit-backdrop-filter: blur(15px);
 
-    box-shadow:
-        0 25px 50px rgba(142, 61, 91, 0.18);
+
     overflow: hidden;
 }
 
 .memory-photo img {
     width: 100%;
-
-    height: 380px;
-
+    height: auto;
     display: block;
-
-    object-fit: cover;
-
+    object-fit: contain;
     border-radius: 22px;
 }
 
@@ -866,9 +866,10 @@ body {
 
     padding: 60px 40px;
 
-    background: rgba(255, 255, 255, 0.3);
-
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                    0 25px 60px rgba(0, 0, 0, 0.25);
 
     border-radius: 35px;
 
@@ -876,8 +877,7 @@ body {
 
     -webkit-backdrop-filter: blur(20px);
 
-    box-shadow:
-        0 25px 60px rgba(142, 61, 91, 0.2);
+
 }
 
 /* =========================
@@ -1234,9 +1234,10 @@ body {
 
     text-align: center;
 
-    background: rgba(255, 255, 255, 0.32);
-
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                    0 25px 60px rgba(0, 0, 0, 0.25);
 
     border-radius: 35px;
 
@@ -1244,8 +1245,6 @@ body {
 
     -webkit-backdrop-filter: blur(20px);
 
-    box-shadow:
-        0 25px 60px rgba(142, 61, 91, 0.2);
 }
 
 .password-icon {
@@ -1257,7 +1256,7 @@ body {
 .password-card h2 {
     margin-bottom: 15px;
 
-    color: #542638;
+    color: #f5f7ff;
 
     font-family: "DM Serif Display", serif;
 
@@ -1334,9 +1333,10 @@ body {
 
     text-align: center;
 
-    background: rgba(255, 255, 255, 0.32);
-
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                    0 25px 60px rgba(0, 0, 0, 0.25);
 
     border-radius: 35px;
 
@@ -1344,8 +1344,6 @@ body {
 
     -webkit-backdrop-filter: blur(20px);
 
-    box-shadow:
-        0 25px 60px rgba(142, 61, 91, 0.2);
 }
 
 .story-label {
@@ -1361,7 +1359,7 @@ body {
 .friendship-story-card h1 {
     margin: 20px 0 30px;
 
-    color: #542638;
+    color: #f5f7ff;
 
     font-family: "DM Serif Display", serif;
 
@@ -1439,4 +1437,344 @@ body {
 
     box-shadow:
         0 8px 20px rgba(199, 91, 124, 0.3);
+}
+/* =========================================
+   FINAL BLUE THEME OVERRIDE
+========================================= */
+
+:root {
+    --deep-blue: #0b1026;
+    --midnight-blue: #101936;
+    --royal-blue: #243b55;
+    --soft-blue: #4f7cac;
+    --lavender-blue: #8e9bff;
+    --ice-blue: #c5cbea;
+    --white-blue: #f5f7ff;
+}
+
+/* =========================
+   ALL MAIN SECTIONS
+========================= */
+
+.birthday-page {
+    background: var(--deep-blue);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    background:
+        radial-gradient(circle at top left,
+            rgba(79, 124, 172, 0.45),
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            rgba(142, 155, 255, 0.35),
+            transparent 35%),
+        linear-gradient(135deg,
+            #0b1026,
+            #182848,
+            #243b55);
+}
+
+/* =========================
+   GLOWING BLOBS
+========================= */
+
+.glow-one {
+    background: #4f7cac;
+}
+
+.glow-two {
+    background: #8e9bff;
+}
+
+.glow-three {
+    background: #9ec5e8;
+}
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.small-title {
+    color: #aebcff;
+}
+
+.hero-content h1 {
+    color: #f5f7ff;
+}
+
+.hero-content h1 span {
+    color: #8e9bff;
+}
+
+.hero-content p {
+    color: #c5cbea;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.surprise-button,
+.final-button,
+.story-button {
+    background:
+        linear-gradient(135deg,
+            #4f7cac,
+            #6d78d9);
+
+    box-shadow:
+        0 15px 35px rgba(79, 124, 172, 0.35);
+}
+
+.surprise-button:hover,
+.final-button:hover,
+.story-button:hover {
+    background:
+        linear-gradient(135deg,
+            #5c91c4,
+            #8e9bff);
+}
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories-section {
+    background:
+        linear-gradient(135deg,
+            #101936,
+            #182848,
+            #243b55);
+}
+
+.section-heading h2 {
+    color: #f5f7ff;
+}
+
+.section-heading h2 strong {
+    color: #8e9bff;
+}
+
+.section-heading p {
+    color: #c5cbea;
+}
+
+/* =========================
+   PHOTO CARDS
+========================= */
+
+.photo-card,
+.memory-photo,
+.memory-quote {
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.photo-card p {
+    color: #c5cbea;
+}
+
+.photo-placeholder {
+    background:
+        linear-gradient(135deg,
+            rgba(79, 124, 172, 0.45),
+            rgba(142, 155, 255, 0.35));
+}
+
+/* =========================
+   MEMORY QUOTES
+========================= */
+
+.memory-quote span {
+    color: #8e9bff;
+}
+
+.memory-quote p {
+    color: #f5f7ff;
+}
+
+.memory-quote small {
+    color: #aebcff;
+}
+
+/* =========================
+   BIRTHDAY MESSAGE
+========================= */
+
+.birthday-message-section {
+    background:
+        radial-gradient(circle at top left,
+            rgba(79, 124, 172, 0.45),
+            transparent 35%),
+        linear-gradient(135deg,
+            #0b1026,
+            #182848,
+            #243b55);
+}
+
+.birthday-message-card {
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.message-label {
+    color: #aebcff;
+}
+
+.birthday-message-card h2 {
+    color: #f5f7ff;
+}
+
+.birthday-message {
+    color: #c5cbea;
+}
+
+.message-signature {
+    color: #8e9bff;
+}
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+.final-surprise-section {
+    background:
+        radial-gradient(circle at center,
+            rgba(79, 124, 172, 0.45),
+            transparent 45%),
+        linear-gradient(135deg,
+            #0b1026,
+            #182848,
+            #243b55);
+}
+
+.final-surprise-card,
+.final-message-card,
+.password-card,
+.friendship-story-card {
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.final-surprise-card h2,
+.final-message-card h1 {
+    color: #f5f7ff;
+}
+
+.final-surprise-card p,
+.final-message-card p {
+    color: #c5cbea;
+}
+
+.final-message-card h2 {
+    color: #8e9bff;
+}
+
+/* =========================
+   PASSWORD SCREEN
+========================= */
+
+.password-card h2 {
+    color: #f5f7ff;
+}
+
+.password-card p {
+    color: #c5cbea;
+}
+
+.password-card input {
+    color: #f5f7ff;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(174, 188, 255, 0.5);
+}
+
+.password-card input::placeholder {
+    color: #aebcff;
+}
+
+.password-card input:focus {
+    border-color: #8e9bff;
+
+    box-shadow:
+        0 0 0 3px rgba(142, 155, 255, 0.2);
+}
+
+.password-error {
+    color: #9ec5e8 !important;
+}
+
+/* =========================
+   FRIENDSHIP STORY
+========================= */
+
+.story-label {
+    color: #aebcff;
+}
+
+.friendship-story-card h1 {
+    color: #f5f7ff;
+}
+
+.friendship-story-text {
+    color: #c5cbea;
+}
+
+.story-ending {
+    color: #8e9bff;
+}
+
+/* =========================
+   PROGRESS DOTS
+========================= */
+
+.progress-dot {
+    color: #aebcff;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(174, 188, 255, 0.4);
+}
+
+.progress-dot.active {
+    color: white;
+
+    background: #4f7cac;
+
+    box-shadow:
+        0 8px 20px rgba(79, 124, 172, 0.4);
+}
+
+/* =========================
+   SCROLL TEXT
+========================= */
+
+.scroll-text {
+    color: #aebcff;
+}
+
+/* =========================
+   FLOATING ELEMENT SHADOW
+========================= */
+
+.floating-heart {
+    filter:
+        drop-shadow(0 8px 15px rgba(79, 124, 172, 0.35));
 }

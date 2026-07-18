@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { Heart, Sparkles, Gift } from "lucide-react";
 
 import "./test.css";
-import img1 from "./assets/images/img1.jpg";
-import img2 from "./assets/images/img2.jpg";
+import img1 from "./assets/images/img1.png";
+import img2 from "./assets/images/img2.png";
+import img3 from "./assets/images/img4.png";
+import img4 from "./assets/images/img3.png";
 import birthdaySong from "./assets/music/nastelbom-happy-birthday-471481.mp3";
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
     }
   };
   const checkPassword = () => {
-    if (password === "raj123") {
+    if (password === "iloveyou") {
       setShowPasswordScreen(false);
       setShowFriendshipStory(true);
       setPasswordError("");
@@ -57,13 +59,16 @@ function App() {
     <main className="birthday-page">
       <div className="floating-hearts-container">
         <span className="floating-heart heart-1">💖</span>
-        <span className="floating-heart heart-2">💕</span>
-        <span className="floating-heart heart-3">💗</span>
-        <span className="floating-heart heart-4">💞</span>
-        <span className="floating-heart heart-5">💓</span>
-        <span className="floating-heart heart-6">💖</span>
         <span className="floating-heart heart-7">💕</span>
-        <span className="floating-heart heart-8">💗</span>
+        <span className="floating-heart heart-3">💗</span>
+        <span className="floating-heart heart-5">💞</span>
+        <span className="floating-heart heart-8">💙</span>
+        <span className="floating-heart heart-9">💜</span>
+        <span className="floating-heart heart-4">🤍</span>
+        <span className="floating-heart heart-10">🖤</span>
+        <span className="floating-heart heart-6">💙</span>
+        <span className="floating-heart heart-2">💜</span>
+
       </div>
       <audio
         ref={audioRef}
@@ -192,13 +197,9 @@ function App() {
                 <span>“</span>
 
                 <p>
-                  Some people come into our lives and make
-                  ordinary moments feel special. 💖
+                  Some people come into our lives as friends and slowly become a beautiful part of our story. Happy Birthday, Raj. 💙✨
                 </p>
 
-                <small>
-                  — A beautiful memory with Raj ✨
-                </small>
               </div>
             </motion.div>
 
@@ -217,13 +218,10 @@ function App() {
                 <span>“</span>
 
                 <p>
-                  The best memories are the ones that make
-                  us smile every time we remember them. 💕
+                  May this year bring you unexpected happiness, unforgettable adventures, genuine smiles, and everything your heart wishes for. Happy Birthday, Raj! 💙
                 </p>
 
-                <small>
-                  — Moments worth remembering ✨
-                </small>
+
               </div>
             </motion.div>
 
@@ -235,20 +233,17 @@ function App() {
               viewport={{ once: true }}
             >
               <div className="memory-photo">
-                <img src={img1} alt="Raj memory 3" />
+                <img src={img3} alt="Raj memory 3" />
               </div>
 
               <div className="memory-quote">
                 <span>“</span>
 
                 <p>
-                  Life is a little more beautiful when
-                  shared with someone special. 🌸
+                  This is not just another birthday… it is another beautiful chapter in your story. Keep smiling, keep shining, and keep being you. Happy Birthday, Raj!💙✨
                 </p>
 
-                <small>
-                  — More memories, more smiles 💖
-                </small>
+
               </div>
             </motion.div>
 
@@ -259,20 +254,17 @@ function App() {
               viewport={{ once: true }}
             >
               <div className="memory-photo">
-                <img src={img2} alt="Raj memory 2" />
+                <img src={img4} alt="Raj memory 2" />
               </div>
 
               <div className="memory-quote">
                 <span>“</span>
 
                 <p>
-                  The best memories are the ones that make
-                  us smile every time we remember them. 💕
+                  May this new chapter of your life be filled with beautiful moments, unforgettable memories, endless laughter, and everything that makes your heart happy. Happy Birthday, Raj! 🎂💙✨
                 </p>
 
-                <small>
-                  — Moments worth remembering ✨
-                </small>
+
               </div>
             </motion.div>
 
@@ -404,7 +396,7 @@ function App() {
               className="final-button"
               onClick={checkPassword}
             >
-              🔓 Unlock Our Story
+              🔓 Unlock 
             </button>
 
             {passwordError && (
@@ -463,23 +455,18 @@ function App() {
                   💖 ✨ 💕
                 </div>
 
-                <p className="story-label">
-                  STEP ONE
-                </p>
 
-                <h1>
-                  How It Started
-                </h1>
 
+                <h2>
+                  I HATE YOU
+                </h2>
+                <br></br>
                 <p className="friendship-story-text">
-                  Every beautiful friendship begins somewhere.
-                  Maybe with a simple conversation, a random
-                  moment, or something we never expected. ✨
+                  Because of ✨
                 </p>
 
                 <p className="friendship-story-text">
-                  And somehow, that small beginning became
-                  the start of something really special. 💖
+                  Late ga puttinandhuku. 💖
                 </p>
 
               </motion.div>
@@ -499,27 +486,22 @@ function App() {
               >
 
                 <div className="final-hearts">
-                  📸 😂 💕
+                  💖 ✨ 💕
                 </div>
 
-                <p className="story-label">
-                  STEP TWO
-                </p>
 
-                <h1>
-                  The Memories
-                </h1>
+
+                <h2>
+                  I HATE YOU
+                </h2>
+                <br></br>
 
                 <p className="friendship-story-text">
-                  From random conversations to endless laughter,
-                  from silly moments to unforgettable memories,
-                  every moment slowly became part of our story. ✨
+                  Because of ✨
                 </p>
 
                 <p className="friendship-story-text">
-                  Some memories may seem small,
-                  but they are the ones that make us smile
-                  whenever we remember them. 💕
+                  Late ga parichayam ainandhuku. 💕
                 </p>
 
               </motion.div>
@@ -542,24 +524,20 @@ function App() {
                   🤝 💖 ✨
                 </div>
 
-                <p className="story-label">
-                  STEP THREE
-                </p>
 
-                <h1>
-                  Our Friendship
-                </h1>
 
-                <p className="friendship-story-text">
-                  The best part about friendship is having
-                  someone with whom you can be completely
-                  yourself. 💖
-                </p>
+                <h2>
+                  I HATE YOU
+                </h2>
+                <br></br>
 
                 <p className="friendship-story-text">
-                  Through laughter, random moments, and
-                  everything in between, this friendship has
-                  become something I truly value. 💕
+                  Because of ✨
+                </p>
+
+
+                <p className="friendship-story-text">
+                  Late ga nachinandhuku. 💕
                 </p>
 
               </motion.div>
@@ -579,31 +557,26 @@ function App() {
               >
 
                 <div className="final-hearts">
-                  🎂 🎉 💖
+                  💖 ✨ 💕
                 </div>
 
-                <p className="story-label">
-                  STEP FOUR
-                </p>
 
-                <h1>
-                  Today Is Your Day
-                </h1>
+
+                <h2>
+                  I HATE YOU
+                </h2>
+                <br></br>
 
                 <p className="friendship-story-text">
-                  Raj, I hope your birthday is filled with
-                  happiness, laughter, love, and everything
-                  that makes you smile. ✨
+                  Because of ✨
                 </p>
 
                 <p className="friendship-story-text">
-                  Thank you for being such a wonderful friend
-                  and for being a part of so many beautiful
-                  memories. 💖
+                  i love you so much💖
                 </p>
 
                 <div className="story-ending">
-                  Happy Birthday, Raj! 🎂✨
+                  I LOVE YOU, Raj! 🎂✨
                 </div>
 
               </motion.div>
@@ -632,7 +605,7 @@ function App() {
                   className="story-button"
                   onClick={nextStoryStep}
                 >
-                  Next Chapter ✨ →
+                  Next ✨ →
                 </button>
 
               ) : (
@@ -644,7 +617,7 @@ function App() {
                     setShowFriendshipStory(false);
                   }}
                 >
-                  💖 Close Story
+                    💖 Close
                 </button>
 
               )}
