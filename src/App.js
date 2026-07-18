@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Gift } from "lucide-react";
 
@@ -19,22 +19,20 @@ function App() {
   const [showFriendshipStory, setShowFriendshipStory] = useState(false);
   const [currentStoryStep, setCurrentStoryStep] = useState(1);
   const audioRef = useRef(null);
+  useEffect(() => {
+    const startMusic = async () => {
+      try {
+        await audioRef.current.play();
+        setIsPlaying(true);
+      } catch (error) {
+        console.log("Browser blocked autoplay");
+      }
+    };
 
-  const toggleMusic = () => {
-    if (!audioRef.current) {
-      return;
-    }
+    startMusic();
+  }, []);
 
-    if (isPlaying) {
-      audioRef.current.pause();
 
-      setIsPlaying(false);
-    } else {
-      audioRef.current.play();
-
-      setIsPlaying(true);
-    }
-  };
   const checkPassword = () => {
     if (password === "iloveyou") {
       setShowPasswordScreen(false);
@@ -76,12 +74,27 @@ function App() {
         loop
       />
       <motion.button
-        className="music-button"
-        onClick={toggleMusic}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        className="surprise-button"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => {
+          setShowMemories(true);
+
+          if (!isPlaying && audioRef.current) {
+            audioRef.current
+              .play()
+              .then(() => {
+                setIsPlaying(true);
+              })
+              .catch((error) => {
+                console.log("Music could not start:", error);
+              });
+          }
+        }}
       >
-        {isPlaying ? "🔊" : "🎵"}
+        <Gift size={20} />
+        Open Your Surprise
+        <Heart size={18} fill="currentColor" />
       </motion.button>
       {/* HERO SECTION */}
       <section className="hero-section">
@@ -615,6 +628,8 @@ function App() {
                   onClick={() => {
                     setCurrentStoryStep(1);
                     setShowFriendshipStory(false);
+                    setPassword("");
+                    setPasswordError("");
                   }}
                 >
                     💖 Close
