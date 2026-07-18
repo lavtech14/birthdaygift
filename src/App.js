@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Gift } from "lucide-react";
-import confetti from "canvas-confetti";
+
 import "./test.css";
 import img1 from "./assets/images/img1.jpg";
 import img2 from "./assets/images/img2.jpg";
