@@ -9,7 +9,7 @@ import birthdaySong from "./assets/music/nastelbom-happy-birthday-471481.mp3";
 
 function App() {
   const [showMemories, setShowMemories] = useState(false);
-  const [showFinalSurprise, setShowFinalSurprise] = useState(false);
+  // const [showFinalSurprise, setShowFinalSurprise] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showPasswordScreen, setShowPasswordScreen] = useState(false);
   const [password, setPassword] = useState("");
@@ -17,17 +17,7 @@ function App() {
   const [showFriendshipStory, setShowFriendshipStory] = useState(false);
   const [currentStoryStep, setCurrentStoryStep] = useState(1);
   const audioRef = useRef(null);
-  const revealFinalSurprise = () => {
-    setShowFinalSurprise(true);
 
-    confetti({
-      particleCount: 180,
-      spread: 100,
-      origin: {
-        y: 0.6
-      }
-    });
-  };
   const toggleMusic = () => {
     if (!audioRef.current) {
       return;
