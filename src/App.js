@@ -5,8 +5,8 @@ import { Heart, Sparkles, Gift } from "lucide-react";
 import "./test.css";
 import img1 from "./assets/images/img1.png";
 import img2 from "./assets/images/img2.png";
-import img3 from "./assets/images/img4.png";
-import img4 from "./assets/images/img3.png";
+import img4 from "./assets/images/img4.jpg";
+import img3 from "./assets/images/img3.png";
 import birthdaySong from "./assets/music/nastelbom-happy-birthday-471481.mp3";
 
 function App() {
@@ -196,9 +196,9 @@ function App() {
 
               <div className="memory-quote">
                 <span>“</span>
-
+                <h3> 1st impression </h3>
                 <p>
-                  Some people come into our lives as friends and slowly become a beautiful part of our story. Happy Birthday, Raj. 💙✨
+                  Not a bad fellow, feeling like... new person la anipinchaledhu  💙✨
                 </p>
 
               </div>
@@ -218,8 +218,9 @@ function App() {
               <div className="memory-quote">
                 <span>“</span>
 
+                <h3> 2nd impression</h3>
                 <p>
-                  May this year bring you unexpected happiness, unforgettable adventures, genuine smiles, and everything your heart wishes for. Happy Birthday, Raj! 💙
+                  feel ayye time ledhu 💙✨
                 </p>
 
 
@@ -240,8 +241,9 @@ function App() {
               <div className="memory-quote">
                 <span>“</span>
 
+                <h3> 3rd impression </h3>
                 <p>
-                  This is not just another birthday… it is another beautiful chapter in your story. Keep smiling, keep shining, and keep being you. Happy Birthday, Raj!💙✨
+                  1st time oka person ni inka koncham time undachuga ani adagali anipinchindhi 💙✨
                 </p>
 
 
@@ -261,8 +263,11 @@ function App() {
               <div className="memory-quote">
                 <span>“</span>
 
+                <h3>
+                  final impression
+                </h3>
                 <p>
-                  May this new chapter of your life be filled with beautiful moments, unforgettable memories, endless laughter, and everything that makes your heart happy. Happy Birthday, Raj! 🎂💙✨
+                  ------------------------------------------------ cheppanu 💙✨
                 </p>
 
 
@@ -337,7 +342,7 @@ function App() {
             </div>
 
             <h2>
-              One Secret Surprise
+              niku okati cheppali
             </h2>
 
             <p>
@@ -351,7 +356,7 @@ function App() {
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowPasswordScreen(true)}
             >
-              ✨ Open Secret Surprise ✨
+              ✨ cheppu ✨
             </motion.button>
 
           </motion.div>
@@ -371,7 +376,7 @@ function App() {
             </div>
 
             <h2>
-              A Secret Is Waiting...
+              need password....
             </h2>
 
             <p>
@@ -397,7 +402,7 @@ function App() {
               className="final-button"
               onClick={checkPassword}
             >
-              🔓 Unlock 
+              Acha
             </button>
 
             {passwordError && (
